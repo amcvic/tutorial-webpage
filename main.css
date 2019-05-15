@@ -1,0 +1,45 @@
+body {
+  background-image: url("https://images.pexels.com/photos/681467/pexels-photo-681467.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: 100%;
+  color: #d6baad;
+  font-family: 'Inconsolata', monospace;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  padding: 5px;
+}
+
+h3 {
+  font-family: 'Inconsolata', monospace;
+}
+
+a {
+  color: #f06431;
+}
+
+a:hover {
+  color: #f79a32;
+}
+
+#functions {
+  background: rgb(152,103,106);
+  background: rgba(152,103, 106, 0.5);
+  border: 1px solid #d6baad;
+  padding: 5px;
+}
+
+#objects {
+  background: rgb(152,103,106);
+  background: rgba(152,103, 106, 0.5);
+  border: 1px solid #d6baad;
+  padding: 5px;
+}
+
+#conditionals {
+  background: rgb(152,103,106);
+  background: rgba(152,103, 106, 0.5);
+  border: 1px solid #d6baad;
+  padding: 5px;
+}

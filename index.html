@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Basics</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="kimbie.dark.css">
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Space+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+  <section>
+    <div class="w3-sidebar w3-bar-block w3-border-left w3-border-top w3-animate-right" style="display:none;background: #221a0f;right:0" id="sidebar">
+      <button onclick="closeSidebar()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <a target="_blank" href="https://github.com/rlx310/L_Javascript_Duckett_Interactive-Front-End-Web-Development_Edition-1/blob/master/JavaScript%20and%20JQuery%20Interactive%20Front-En%20-%20Jon%20Duckett.pdf" class="w3-bar-item w3-button">Javascript & JQuery Textbook PDF</a>
+      <a target="_blank" href="https://www.romanzolotarev.com/" class="w3-bar-item w3-button">Mastering web development</a>
+      <a target="_blank" href="https://www.w3schools.com/" class="w3-bar-item w3-button">W3Schools</a>
+    </div>
+        
+    <div class="w3-left"style='border:1px solid #d6baad;background: #221a0f;width:100%'>
+      <h1 class="animated rubberBand slow" style="display: inline-block;">Javascript Basics</h1>
+      <button class="w3-button w3-xlarge w3-right" style="display:inline-block" onclick="openSidebar()">☰</button>
+    </div>
+
+  </section>
+
+  <br><br><br><br>
+
+  <div>
+
+    <section>
+      <nav>
+        <a href="#functions">Functions</a> |
+        <a href="#objects">Objects</a> |
+        <a href="#conditionals">Conditionals</a> 
+      </nav>
+    </section>
+    
+    <section id="functions">
+      <article>
+        <header>
+          <h1>Functions</h1>
+          <h3>Segments of code that do a specified task</h3>
+        </header>
+        <p>
+          <pre><code class="javascript">
+          //This function returns the sum of x and y
+          function add(x, y) {
+            return x + y;
+          }
+          //This is an invocation of the function that will return the sum of 5 and 6, 11.
+          function(5, 6);
+          </code></pre>
+          Functions are very useful chunks of code that contain a series of instructions that you can invoke as many times as you want.
+          A Function starts out with a "function" declaration, followed by the name of your function (can be named anything that is not a <a href="https://www.w3schools.com/js/js_reserved.asp">reserved word</a>) and takes in optional parameters, (in this case, x & y), that you can then use inside your function.
+          Functions sometimes return values depending on what you want it to do, in this example we return the sum of x and y.
+          In order to call the function, you simply write the name of your function with parentheses, and inside the parentheses pass the necessary arguments. In our example we pass 5 and 6 to the function so that we can get our desired sum of 11.<br><br>
+        </p>
+        </article>
+    </section>
+    <br>
+    <section id="objects">
+      <article>
+        <header>
+          <h1>Objects</h1>
+          <h3>Special variable that holds information regarding a set thing</h3>
+        </header>
+        <p>
+          <pre><code class="javascript">
+            //Example object of a student named John Smith
+            let student = {
+              firstName : "John",
+              lastName  : "Smith",    
+              id        : 500000783,
+              age       : 17,
+              schedule  : ["art", "history", "science", "math"]
+            };
+            //Example for accessing the value for the key "id"
+            student.id;
+          </code></pre>
+          An object is a container for a thing that can hold many properties and even methods. Defining objects is as simple as defining a variable, but in this case we use curly braces to hold all of our object's properties.
+          An object property can be any kind of variable, be it a string, number, boolean, array, or even another object.
+          In our example, we have two string properties, (first and last names), two numbers, (id and age), and an array containing this student's class schedule.
+          The properties are in what we call a "key-value pair". This essentially means that the name of the variable is the "key" and the contents of the varialbe is the "value".
+          In order to access the value of a specified key, we use what is known as "dot-notation", in which we write the object name, followed by a period followed by the key we want to access. <br><br>
+        </p>          
+      </article>
+    </section>
+    <br>
+    <section id="conditionals">
+      <article>
+        <header>
+          <h1>Conditionals</h1>
+          <h3>A statement that evaluates to true or false</h3>
+        </header>
+        <p>
+          <pre><code class="javascript">
+            //Example that checks the time of day and gives a relevant greeting
+            let time = 0800;
+            if (time < 1100) {
+              console.log('good morning');
+            } else if (time < 2000) {
+              console.log('good day');
+            } else {
+              console.log('good evening');
+            }
+          </code></pre>
+          Conditionals are statements that will execute a block of code if the given statement evaluates to true.
+          This is useful for the branching points of your program, if you want specific things to happen under specific circumstances.
+          To perform an conditional statement, you write "if" followed by your condition in parentheses. Next, in curly braces, you write the block of code that you want to be run.
+          Following that, if there are other statements you want it to check for, you write "else if" followed by another conditional statement.
+          Finally, if you would like a default case should none of those statements evaluate to true, you write "else" and then your code block.
+          In the example above, since the time is 0800, the message that will be written is 'good morning' since 0800 is less than 1100. <br> <br>
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <footer>
+        <p>Page by: <a href="https://github.com/amcvic">Austin McVicker</a></p>
+      </footer>
+    </section>
+
+  </div>
+
+</body>
+</html>
